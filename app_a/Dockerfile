@@ -2,4 +2,4 @@ FROM python:latest
 ADD . /code
 WORKDIR /code
 RUN pip install -r requirements.txt
-CMD ["python", "app_b.py"]
+CMD ["python", "app_a.py"]
