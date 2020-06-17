@@ -1,11 +1,11 @@
 version: '3'
 services:
   app_a:
-    build: ./app_a.py
+    build: ./app_a
     ports:
      - "5000:5000"
   app_b:
-    build: ./app_b.py
+    build: ./app_b
     ports:
      - "5001:5001"
   redis:
