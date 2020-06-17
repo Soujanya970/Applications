@@ -1,8 +1,12 @@
 version: '3'
 services:
-  web:
-    build: .
+  app_a:
+    build: ./app_a.py
     ports:
      - "5000:5000"
+  app_b:
+    build: ./app_b.py
+    ports:
+     - "5001:5001"
   redis:
     image: "redis:latest"
